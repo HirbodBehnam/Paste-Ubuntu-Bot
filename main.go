@@ -45,6 +45,7 @@ func main() {
 		}
 		go func(m tgbotapi.Message) {
 			msg := tgbotapi.NewMessage(m.Chat.ID, "")
+			msg.ReplyToMessageID = m.MessageID
 			params := url.Values{}
 			params.Add("poster", m.From.FirstName+" "+m.From.LastName)
 			params.Add("syntax", "text")
