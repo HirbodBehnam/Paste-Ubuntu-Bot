@@ -32,8 +32,7 @@ func main() {
 		if update.Message.IsCommand() {
 			msg := tgbotapi.NewMessage(update.Message.Chat.ID, "")
 			switch update.Message.Command() {
-			case "start":
-			case "help":
+			case "help", "start":
 				msg.Text = "Welcome to Paste Ubuntu bot! Here you can paste your text to create a paste on paste.ubuntu.com\nTo get started, you can send the bot the text. The bot will send you the share link after.\nThe expiry date is never, the language is text and the poster name is your telegram first name and last name (not your ID)\n/about"
 			case "about":
 				msg.Text = "Created by Hirbod Behnam\nhttps://github.com/HirbodBehnam/Paste-Ubuntu-Bot"
