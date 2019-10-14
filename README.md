@@ -1,5 +1,7 @@
 # Paste Ubuntu Bot
 A dead simple Telegram bot to share texts on http://paste.ubuntu.com
+
+This bot shares every text message it gets on http://paste.ubuntu.com
 ## The Bot
 You can access the bot [here](http://t.me/UbuntuPasteBinBot).
 
